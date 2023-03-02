@@ -35,7 +35,7 @@
             
             localStorage.setItem('goods', JSON.stringify(array));
            if(window.location.pathname !== "wildberris/goods.html") {
-            window.location.href = 'wildberris/goods.html'
+            window.location.href = 'goods.html'
            } else {
             renderGoods(array)
            }
