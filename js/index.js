@@ -34,8 +34,8 @@
             const array = category ? data.filter((item) => item[category] === value) : data
             
             localStorage.setItem('goods', JSON.stringify(array));
-           if(window.location.pathname !== "goods.html") {
-            window.location.href = 'goods.html'
+           if(window.location.pathname !== "https://magomedkhamaev.github.io/wildberris/goods.html") {
+            window.location.href = 'https://magomedkhamaev.github.io/wildberris/goods.html'
            } else {
             renderGoods(array)
            }
@@ -52,7 +52,7 @@
         })
     })
     
-   if(localStorage.getItem('goods') && window.location.pathname === "goods.html") {
+   if(localStorage.getItem('goods') && window.location.pathname === "https://magomedkhamaev.github.io/wildberris/goods.html") {
     renderGoods(JSON.parse(localStorage.getItem('goods')))
    }
     // const goods = JSON.parse(localStorage.getItem('goods'))
