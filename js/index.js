@@ -38,7 +38,7 @@
             window.location.href = 'https://magomedkhamaev.github.io/wildberris/goods.html'
            } else {
             renderGoods(array)
-	    console.log(array)   
+	    console.log(array, 'first arr')   
            }
         })
     }
@@ -48,7 +48,7 @@
             event.preventDefault()
             const linkValue = link.textContent
             const category = link.dataset.field
-            console.log(linkValue, category);
+            console.log(linkValue, category, 'link and cat');
             getData(linkValue, category)
         })
     })
@@ -57,7 +57,7 @@
     renderGoods(JSON.parse(localStorage.getItem('goods')))
    }
      const goods = JSON.parse(localStorage.getItem('goods'))
-     console.log(goods);
+     console.log(goods, 'son, goods');
 }
 
  getGoods()
