@@ -57,7 +57,6 @@
     renderGoods(JSON.parse(localStorage.getItem('goods')))
    }
      const goods = JSON.parse(localStorage.getItem('goods'))
-     console.log(goods, 'son, goods');
 }
 
  getGoods()
