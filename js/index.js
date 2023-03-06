@@ -38,6 +38,7 @@
             window.location.href = 'https://magomedkhamaev.github.io/wildberris/goods.html'
            } else {
             renderGoods(array)
+	    console.log(array)   
            }
         })
     }
@@ -47,7 +48,7 @@
             event.preventDefault()
             const linkValue = link.textContent
             const category = link.dataset.field
-
+            console.log(linkValue, category);
             getData(linkValue, category)
         })
     })
@@ -55,8 +56,8 @@
    if(localStorage.getItem('goods') && window.location.pathname === "https://magomedkhamaev.github.io/wildberris/goods.html") {
     renderGoods(JSON.parse(localStorage.getItem('goods')))
    }
-    // const goods = JSON.parse(localStorage.getItem('goods'))
-    // console.log(goods);
+     const goods = JSON.parse(localStorage.getItem('goods'))
+     console.log(goods);
 }
 
  getGoods()
